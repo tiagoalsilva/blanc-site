@@ -1,0 +1,202 @@
+/* GLOBAL STYLES
+-------------------------------------------------- */
+/* fonts */
+@import url('https://fonts.googleapis.com/css?family=Hind:300,400,500,600,700');
+
+/* Padding below the footer and lighter body text */
+body {
+  padding-top: 10px;
+  padding-bottom: 3rem;
+  color: #000;
+  font-family: Hind;
+  /*background: url(http://griddle.it/1200-3-30) repeat-y center top*/
+}
+
+.btn-primary {
+  background: #e2b104 !important;
+  border: none;
+  border-radius: 20px;
+  cursor:pointer;
+}
+
+.shadow {
+  box-shadow: 0 8px 30px 0 rgba(0, 0, 0, 0.4);
+}
+
+/* Stackoverflow preview fix, please ignore */
+.navbar-nav {
+  flex-direction: row;
+}
+
+.nav-link {
+  padding-right: .5rem !important;
+  padding-left: .5rem !important;
+  color: #000;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+/* Fixes dropdown menus placed on the right side */
+
+.menu-axl {
+  position: absolute;
+  right: 1em;
+  top: 25px;
+}
+.menu-axl a {
+  font-size: 16px;
+  font-weight: normal;
+  color: #99a59a;
+}
+
+p.title-head {
+  font-size: 36px;
+  font-weight: 300;
+  color:#141414;
+}
+
+.bg-dark {
+  background-color: #99a59a
+}
+.nav-item.active {
+  text-decoration: underline;
+}
+/* CUSTOMIZE THE CAROUSEL
+-------------------------------------------------- */
+
+/* Carousel base class */
+.carousel {
+  margin-bottom: 4rem;
+}
+/* Since positioning the image, we need to help out the caption */
+.carousel-caption {
+  z-index: 10;
+  bottom: 3rem;
+}
+
+/* Declare heights because of positioning of img element */
+.carousel-item {
+  height: 32rem;
+  background-color: #777;
+}
+.carousel-item > img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  height: 32rem;
+}
+
+
+/* tratamento CONTENT
+-------------------------------------------------- */
+
+/* Center align the text within the three columns below the carousel */
+.tratamento .col-lg-4 {
+  margin-bottom: 1.5rem;
+  text-align: center;
+} 
+.tratamento h2 {
+  font-weight: normal;
+}
+.tratamento .col-lg-4 p {
+  margin-right: .75rem;
+  margin-left: .75rem;
+}
+
+.card-title {
+  font-size: 24px;
+  font-weight: 300;
+}
+
+.card-img-overlay {
+  height: 25%;
+  opacity: 0.7;
+  background-color: #000000 !important;
+  top: auto;
+}
+
+.historia {
+  margin-bottom: 1.5rem;
+}
+.historia p {
+  font-size: 18px;
+  font-weight: 300;
+}
+
+h2.title-row {
+  font-size: 32px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+/* Featurettes
+------------------------- */
+
+.featurette-divider {
+  margin: 5rem 0; /* Space out the Bootstrap <hr> more */
+}
+
+.featurette {
+  background: url(../img/bg.png) no-repeat bottom left;
+}
+.featurette.tratamento {
+  background: url(../img/bg2.png) no-repeat bottom left;
+}
+
+/* Thin out the tratamento headings */
+.featurette-heading {
+  font-size: 18px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.lead {
+  font-size: 18px;
+  font-weight: 300;
+  color: #3c3c3c;
+}
+.tratamento .featurette-heading {
+  font-size: 32px;
+  font-weight: bold;
+  color: #3c3c3c;
+}
+.menu-footer {
+  height: 170px;
+}
+
+.menu-footer a {
+  color:#fff;
+  font-size: 16px;
+  font-weight: normal;
+  text-transform: uppercase;
+}  
+.footer p{
+  font-size: 14px;
+  font-weight: normal;
+  color: #3c3c3c;
+}
+
+
+/* RESPONSIVE CSS
+-------------------------------------------------- */
+
+@media (min-width: 40em) {
+  /* Bump up size of carousel content */
+  .carousel-caption p {
+    margin-bottom: 1.25rem;
+    font-size: 1.25rem;
+    line-height: 1.4;
+  }
+
+  .featurette-heading {
+    font-size: 18px;
+  }
+}
+
+@media (min-width: 62em) {
+  .featurette-heading {
+    margin-top: 7rem;
+  }
+  p.title-head {
+    display: none; 
+  }
+}
