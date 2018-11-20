@@ -19,6 +19,10 @@ body {
   cursor:pointer;
 }
 
+.shadow {
+  box-shadow: 0 8px 30px 0 rgba(0, 0, 0, 0.4);
+}
+
 /* Stackoverflow preview fix, please ignore */
 .navbar-nav {
   flex-direction: row;
@@ -53,6 +57,9 @@ p.title-head {
 
 .bg-dark {
   background-color: #99a59a
+}
+.nav-item.active {
+  text-decoration: underline;
 }
 /* CUSTOMIZE THE CAROUSEL
 -------------------------------------------------- */
@@ -127,15 +134,32 @@ h2.title-row {
 
 .featurette-divider {
   margin: 5rem 0; /* Space out the Bootstrap <hr> more */
+  border-color: #fff
+}
+
+.featurette {
+  background: url(../img/bg.png) no-repeat bottom left;
+}
+.featurette.tratamento {
+  background: url(../img/bg2.png) no-repeat bottom left;
 }
 
 /* Thin out the tratamento headings */
 .featurette-heading {
-  font-weight: 300;
-  line-height: 1;
-  letter-spacing: -.05rem;
+  font-size: 18px;
+  font-weight: bold;
+  text-transform: uppercase;
 }
-
+.lead {
+  font-size: 18px;
+  font-weight: 300;
+  color: #3c3c3c;
+}
+.tratamento .featurette-heading {
+  font-size: 32px;
+  font-weight: bold;
+  color: #3c3c3c;
+}
 .menu-footer {
   height: 170px;
 }
@@ -165,15 +189,12 @@ h2.title-row {
   }
 
   .featurette-heading {
-    font-size: 50px;
-  }
+    font-size: 18px;
+  }  
 }
 
 @media (min-width: 62em) {
   .featurette-heading {
     margin-top: 7rem;
-  }
-  p.title-head {
-    display: none; 
   }
 }
