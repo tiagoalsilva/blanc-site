@@ -364,7 +364,7 @@ h2.title-row {
     background-size: 100% 50%;
   }
   .featurette.equipe {
-    background: url(../img/bg-contato.png) no-repeat center bottom;
+    background: url(../img/bg-contato.png) no-repeat center top;
     height: 500px;
     background-size: 100% 50%;
   }
@@ -372,5 +372,15 @@ h2.title-row {
     position: absolute;
     bottom: 20px;
     left: 15px;
+  }
+  .equipe .adress {
+    color: #fff;
+    font-size: 18px;
+    left: auto;
+    top: 20px;
+  }
+  .equipe .featurette-image {
+    top: 40px;
+    position: absolute;
   }
 }
