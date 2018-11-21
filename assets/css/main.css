@@ -266,7 +266,7 @@ h2.title-row {
   position: relative;
   height: 70px;
   width: 85px;
-  text-indent: 9999em;
+  text-indent: -9999em;
   cursor: pointer;
 }
 .nav-equipe li.prev {
@@ -406,5 +406,19 @@ h2.title-row {
   }
   .nav-equipe li.active {
     background-color: #41b7ae;
+  }
+  .featurette.tratamento {
+    background: none;
+  }
+  #select-tratamento {
+    width: 90%;
+    height: calc(2.25rem + 10px);
+    border-radius: 8px !important;
+    background-color: #99a59a;
+    margin: 20px auto;
+    color: #fff;
+    font-size: 18px;
+    font-weight: normal;
+    padding: 0 12px !important;
   }
 }
