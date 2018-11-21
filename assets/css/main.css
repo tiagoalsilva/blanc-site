@@ -380,7 +380,8 @@ h2.title-row {
     top: 20px;
   }
   .equipe .featurette-image {
-    top: 40px;
+    top: -40px;
     position: absolute;
+    left: auto;
   }
 }
