@@ -290,6 +290,7 @@ h2.title-row {
   left: auto;
   top: 60px;
   position: absolute;
+  transform: none;
 }
 .contato p {
   color:#fff;
