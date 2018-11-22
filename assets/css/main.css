@@ -23,6 +23,10 @@ body {
   cursor:pointer;
 }
 
+.btn-contato {
+    padding: 6px 23px;
+}
+
 .shadow {
   box-shadow: 0 8px 30px 0 rgba(0, 0, 0, 0.4);
 }
@@ -149,7 +153,9 @@ h2.title-row {
 }
 .featurette.contato {
   background: url(../img/bg-contato.png) no-repeat bottom right;
-  height: 500px;
+  height: auto;
+  padding: 0 0 120px 0;
+  background-size: 80% 80%;
 }
 
 .featurette.equipe {
@@ -234,9 +240,9 @@ h2.title-row {
   position: absolute;
 }
 .adress {
-  position: absolute;
-  bottom: 60px;
-  left: 0;
+  position: relative;
+  top: 100%;
+  transform: translateY(-100%);
 }
 
 .equipe-text {
@@ -283,6 +289,7 @@ h2.title-row {
   font-weight: normal;
   left: auto;
   top: 60px;
+  position: absolute;
 }
 .contato p {
   color:#fff;
@@ -300,6 +307,13 @@ h2.title-row {
   font-weight: 300;
   color: #000000;
   padding: .5rem .75rem .5rem 0 !important;
+}
+.btn-map {
+  top: 10%;
+  right: -30px;
+  position: absolute;
+  padding: 3px 16px;
+  font-size: 12px;
 }
 
 .menu-footer {
@@ -435,4 +449,5 @@ h2.title-row {
     position: relative;
     top: 30px;
   }
+  .btn-map {display: none;}
 }
